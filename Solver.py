@@ -112,7 +112,7 @@ outTree.Branch('top2', top2, 'top2/D')
 outTree.Branch('cos1',cos1,'cos1/D')
 outTree.Branch('cos2',cos2,'cos2/D')
 outTree.Branch('mtt',mtt,'mtt/D')
-for jentry in xrange(20000):
+for jentry in xrange(entries):
     if jentry % 1000 == 0:
         print "Event", jentry, "/", entries
     t.GetEntry(jentry)
